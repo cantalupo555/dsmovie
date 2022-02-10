@@ -3,11 +3,11 @@ import MovieCard from "components/MovieCard";
 import axios from "axios";
 import {useEffect, useState} from "react";
 import {BASE_URL} from "utils/requests";
-import {Movie, MoviePage} from "types/movie";
+import {MoviePage} from "types/movie";
 
 function Listing() {
 
-    const [pageNumber, setPageNumber] = useState(0);
+    const [pageNumber] = useState(0);
 
     const [page, setPage] = useState<MoviePage>({
         content: [],
